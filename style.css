@@ -4,7 +4,6 @@
 }
 .showcase{
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     padding-top: 0;
 }
@@ -31,5 +30,19 @@
     mix-blend-mode: multiply;
     margin-top: unset;
     font-family: 'Comfortaa', cursive;
-    flex: 1 1 150px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    width: auto;
+  }
+  .showcase video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    }
 }
